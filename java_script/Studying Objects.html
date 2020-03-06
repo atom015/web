@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var num = {'apple':100,'banana':1000};
+		var num1 = {};
+		var num2 = new Object();
+		num1['apple'] = 100;
+		num1['banana'] = 10000;
+		num2['apple'] = 1000;
+		num2['banana'] = 1000;
+		alert(num['apple']);
+		alert(num.banana);
+		for (k in num1){
+			document.write(k,num1[k]);
+		}
+
+	</script>
+</body>
+</html>
