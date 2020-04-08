@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<p id="A"></p>
+	<p id="B"></p>
+	<p id="C"></p>
+	<p id="D"></p>
+	<p id="E"></p>
+	<script>
+		//search 
+		var str = "ABCDEFGHIJKLMNOP";
+		var n = str.search("I");
+		document.getElementById("A").innerHTML = n;
+		var str1 = "Hello World!";
+		var n1 = str1.search(/world/i); // "//"가운데는 패턴 i는 대소문자를 구분하지않고 검색한다.
+		// replace
+		document.getElementById("B").innerHTML = n1;
+		var str2 = "Hello World!";
+		var n2 = str2.replace("World","JS");
+		document.getElementById("C").innerHTML = n2;
+		var n3 = str2.replace(/world/i,"JS");
+		document.getElementById("D").innerHTML = n3;		
+		//patten
+		var p = /oo/;
+		var t = p.test("google");
+		document.getElementById("E").innerHTML = t;	
+		
+	</script>
+</body>
+</html>
